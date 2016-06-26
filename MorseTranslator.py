@@ -73,6 +73,14 @@ def f():
   on(True)
   off(False)
   return;
+def g():
+  on(False)
+  off(True)
+  on(False)
+  off(True)
+  on(True)
+  off(False)
+  return;
 
 word = raw_input("Enter the word you would like to show: ")
 
