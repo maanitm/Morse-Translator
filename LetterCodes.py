@@ -1,3 +1,20 @@
+import RPi.GPIO as GPIO
+
+def on(short):
+  GPIO.output(18,GPIO.HIGH)
+  if short:
+    time.sleep(shortLen)
+  else:
+    time.sleep(longLen)
+  return;
+def off(short):
+  GPIO.output(18,GPIO.LOW)
+  if short:
+    time.sleep(shortLen)
+  else:
+    time.sleep(longLen)
+  return;
+
 def a():
   on(True)
   off(True)

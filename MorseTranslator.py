@@ -11,21 +11,6 @@ shortLen = 1
 longLen = 3
 wordSpace = 7
 
-def on(short):
-  GPIO.output(18,GPIO.HIGH)
-  if short:
-    time.sleep(shortLen)
-  else:
-    time.sleep(longLen)
-  return;
-def off(short):
-  GPIO.output(18,GPIO.LOW)
-  if short:
-    time.sleep(shortLen)
-  else:
-    time.sleep(longLen)
-  return;
-
 word = raw_input("Enter the word you would like to show: ")
 
 for letter in word:
