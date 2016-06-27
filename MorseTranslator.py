@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO
 import time
+import LetterCodes as lc
 
 GPIO.setmode (GPIO.BCM)
 GPIO.setwarnings(False)
@@ -24,118 +25,61 @@ def off(short):
   else:
     time.sleep(longLen)
   return;
-  
-def a():
-  on(True)
-  off(True)
-  on(False)  
-  off(False)
-  return;
-def b():
-  on(False)
-  off(True)
-  on(True)
-  off(True)
-  on(True)
-  off(True)
-  on(True)
-  off(False)
-  return;
-def c():
-  on(False)
-  off(True)
-  on(True)
-  off(True)
-  on(False)
-  off(True)
-  on(True)
-  off(False)
-  return;
-def d():
-  on(False)
-  off(True)
-  on(True)
-  off(True)
-  on(True)
-  off(False)
-  return;
-def e():
-  on(True)
-  off(False)
-  return;
-def f():
-  on(True)
-  off(True)
-  on(True)
-  off(True)
-  on(False)
-  off(True)
-  on(True)
-  off(False)
-  return;
-def g():
-  on(False)
-  off(True)
-  on(False)
-  off(True)
-  on(True)
-  off(False)
-  return;
 
 word = raw_input("Enter the word you would like to show: ")
 
 for letter in word:
   if letter == "a":
-    a()
+    lc.a()
   if letter == "b":
-    b()
+    lc.b()
   if letter == "c":
-    c()
+    lc.c()
   if letter == "d":
-    d()
+    lc.d()
   if letter == "e":
-    e()
+    lc.e()
   if letter == "f":
-    f()
+    lc.f()
   if letter == "g":
-    g()
+    lc.g()
   if letter == "h":
-    h()
+    lc.h()
   if letter == "i":
-    i()
+    lc.i()
   if letter == "j":
-    j()
+    lc.j()
   if letter == "k":
-    k()
+    lc.k()
   if letter == "l":
-    l()
+    lc.l()
   if letter == "m":
-    m()
+    lc.m()
   if letter == "n":
-    n()
+    lc.n()
   if letter == "o":
-    o()
+    lc.o()
   if letter == "p":
-    p()
+    lc.p()
   if letter == "q":
-    q()
+    lc.q()
   if letter == "r":
-    r()
+    lc.r()
   if letter == "s":
-    s()
+    lc.s()
   if letter == "t":
-    t()
+    lc.t()
   if letter == "u":
-    u()
+    lc.u()
   if letter == "v":
-    v()
+    lc.v()
   if letter == "w":
-    w()
+    lc.w()
   if letter == "x":
-    x()
+    lc.x()
   if letter == "y":
-    y()
+    lc.y()
   if letter == "z":
-    z()
+    lc.z()
   if letter == " ":
-    space()
+    lc.space()
