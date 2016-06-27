@@ -7,10 +7,6 @@ GPIO.setwarnings(False)
 GPIO.setup(18,GPIO.OUT)
 print("Welcome to the English -> Morse Translator\n")
 
-shortLen = 1
-longLen = 3
-wordSpace = 7
-
 word = raw_input("Enter the word you would like to show: ")
 
 for letter in word:

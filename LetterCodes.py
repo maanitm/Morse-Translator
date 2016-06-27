@@ -1,4 +1,9 @@
 import RPi.GPIO as GPIO
+import time
+
+shortLen = 1
+longLen = 3
+wordSpace = 7
 
 def on(short):
   GPIO.output(18,GPIO.HIGH)
